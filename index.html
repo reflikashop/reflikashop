@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reflika Shop — Toko perlengkapan airsoft terpercaya. Katalog replika, aksesoris, dan informasi persyaratan perizinan." />
+  <title>Reflika Shop — Toko Perlengkapan Airsoft</title>
+  <style>
+    :root {
+      --primary: #1f3d2b;
+      --accent: #d9a441;
+      --bg: #f6f5f0;
+      --text: #2b2b2b;
+      --card: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header.site-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .brand { font-size: 1.4rem; font-weight: 700; letter-spacing: 1px; }
+    .brand span { color: var(--accent); }
+    nav.main-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-size: 0.95rem;
+    }
+    nav.main-nav a:hover { color: var(--accent); }
+    .hero {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      background: linear-gradient(180deg, var(--primary) 0%, #2c5540 100%);
+      color: #fff;
+    }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    .hero p { max-width: 640px; margin: 0 auto 1.5rem; opacity: 0.9; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #1f1f1f;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { filter: brightness(1.08); }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+    main h2 { margin-bottom: 1rem; color: var(--primary); }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid #e3e1d8;
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+    .feature-card h3 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+    footer.site-footer {
+      background: var(--primary);
+      color: #ddd;
+      text-align: center;
+      padding: 1.25rem 1rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">REFLIKA<span>SHOP</span></div>
+    <nav class="main-nav">
+      <a href="#katalog">Katalog</a>
+      <a href="#tentang">Tentang</a>
+      <a href="legal/permit-requirements">Persyaratan Perizinan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Toko Perlengkapan Airsoft Terpercaya</h1>
+    <p>Temukan replika rifle, pistol, shotgun, marksman, dan aksesoris berkualitas.
+       Main aman, sesuai aturan, dan transparan soal persyaratan perizinan.</p>
+    <a class="btn" href="#katalog">Lihat Katalog Produk</a>
+  </section>
+
+  <main>
+    <section id="katalog">
+      <h2>Katalog Produk</h2>
+      <p>Katalog interaktif dengan filter kategori dan tombol
+         <strong>&ldquo;Cek Persyaratan Perizinan&rdquo;</strong> pada setiap produk
+         tersedia melalui komponen React <code>ProductCatalog</code>.</p>
+      <!-- Titik mount aplikasi React (ProductCatalog) -->
+      <div id="react-root"></div>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Produk Original</h3>
+          <p>Replika dan aksesoris dari merek resmi dengan garansi distributor.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Dukungan Legal</h3>
+          <p>Informasi persyaratan perizinan dan aturan penggunaan disajikan di setiap produk.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Pengiriman Aman</h3>
+          <p>Packing tertutup dan kurir yang memahami regulasi pengiriman replika airsoft.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Halo@reflikashop.example &middot; +62 812-0000-0000 &middot; Senin&ndash;Sabtu, 09.00&ndash;17.00 WIB</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Reflika Shop. Semua replika adalah alat olahraga/sporting goods, bukan senjata api.
+       Lihat <a href="legal/permit-requirements">informasi hukum &amp; persyaratan perizinan</a>.</p>
+  </footer>
+</body>
+</html>
